@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BeautyWithJulia</title>
+    <!--bootstrap-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="wow-animation/animate.css">
+    
+    <link rel="shortcut icon" href="images/icons/favicon.ico">
+
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Great+Vibes|Mogra|Abril+Fatface|Orbitron:700" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!--Для мобільної версії-->
+    <link href="css/index.css" rel="stylesheet">
+    <link rel="stylesheet" media="(min-width:800px)" href="css/index-laptop.css">
+    <link rel="stylesheet" media="(max-width:800px)" href="css/index-mobile.css">
+</head>
+<body>
+<header>
+    <div class="head-icons">
+        <a class="bag" href="#"><img width="30" src="images/icons/lang.svg" alt="language"></a> 
+        <a class="bag" href="#"><img width="30" src="images/icons/account.svg" alt="account"> My Account</a>  
+        <a  href="shopping-cart.html"><img width="30" src="images/icons/bag.svg" alt="bag"></a> 
+    </div>
+    <div class="cheat"></div>
+    <div class="search">
+        <form ><!--method??-->
+            <input class="search-text" type="search" name="search" value="SEARCH">
+            <button class="search-button" type="submit" size="66" ><img width="25" src="images/icons/search.svg" alt="search"></button>
+        </form>
+    </div>
+</header>
+   <div class="logo2"><a id="title" class="logo" href="index.html">BeautyWithJulia</a></div>
+    <main>
+        <form  method="post" action="https://formspree.io/julia.ilkiv@gmail.com">
+            <div class="checkout">
+                <div>
+                    <h4>1 Personal information</h4>
+                    <label for="firstname">First Name *</label><br>
+                    <input type="text" id="firstname" name="first-name" required><br>
+                    <label for="lastname">Last Name *</label><br>
+                    <input type="text" id="lastname" name="last-name" required><br>
+                    <label for="email">Email Address </label><br>
+                    <input type="email" id="email" name="email"><br>
+                    <label for="tel">Telephone *</label><br>
+                    <input type="tel" id="tel" name="telephone" required><br>
+                </div>
+                <div> 
+                    <h4>2 BILLING ADDRESS</h4>
+                    <label for="city">City:</label><br>
+    		        <select id="city">
+        			    <option>--Select City--</option>
+        		    	<option>Kyiv</option>
+        		    	<option>Lviv</option>
+        		    	<option>Odessa</option>
+        		    	<option>Ternopil</option>
+    		        </select><br>
+                    <label for="newpost">New Post Address</label><br>
+                    <input type="text" id="newpost" name="newpost"><br>
+                </div>
+                <div>
+                    <h4>3. PAYMENT METHOD</h4>
+                    <label for="radio"></label>
+                    <input type="radio" id="radio" name="payment-method" >MasterCard
+                    <img width="20" src="images/icons/mastercard.svg"><br>
+                    <input type="radio" id="radio" name="payment-method">Visa
+                    <img width="20" src="images/icons/visa.svg"><br>
+                   
+                    <label for="card">Card Number *</label><br>
+                    <input type="text" id="card" name="card-number" pattern="[0-9]{13,16}" required placeholder="1234567891234"><br>                
+                    <label for="expiry">Expiry(mm/yy)</label><br>
+                    <input type="text" id="expiry" name="month" pattern="[0-1]{1}[1-9]{1}" size="3" placeholder="03">/
+                    <input type="text" id="expiry" name="year" size="3" pattern="{2}" placeholder="17"><br>
+                    <label for="code">Security Code *</label><br>
+                    <input type="text" id="code" name="security-code" pattern="[0-9]{3}" size="3" required placeholder="123"><br>
+                    
+                </div>
+                
+            </div>
+           <div class="pay-now"><button id="submit" type="submit">PAY NOW</button> </div>
+        </form>
+        
+        
+    </main>
+    <footer>
+            <div class="last-footer">
+                <h5>BEAUTYWITHJULIA &copy; 2016</h5>
+            </div>
+    </footer>
+    
+ <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>       
+ <!-- bootstrap -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>       
+ <!--jquery +add 's' in http-->   
+<script src="wow-animation/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+<!--Lettering.js-->
+<script src="textillate/jquery.textillate.js"></script>
+<script src="textillate/jquery.lettering.js"></script>
+<script src="textillate/text.js"></script>
+ <!--JS-->
+<script type="text/javascript" src="js/carousel.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+
+</body>
+</html>
