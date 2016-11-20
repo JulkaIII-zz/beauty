@@ -1,0 +1,32 @@
+header {
+    background-color: black;
+    max-height: 33px;
+    margin:0;
+}
+h1,h3{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 30px;
+    letter-spacing:3px;
+}
+h2{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 20px;
+    color:#d5d5d5;;
+    letter-spacing:2px;
+    margin-bottom: 0;
+}
+h5{
+    text-align: center;
+}
+p{
+    font-family: 'Great Vibes', cursive;
+    font-size:25px;
+}
+li, a{
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Abril Fatface', cursive;
+    color:black;
+}
+
+
