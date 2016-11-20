@@ -15,15 +15,13 @@
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Great+Vibes|Mogra|Abril+Fatface|Orbitron:700" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1"> <!--Для мобільної версії-->
     <link href="css/index.css" rel="stylesheet">
-    <link rel="stylesheet" media="(min-width:800px)" href="css/index-laptop.css">
-    <link rel="stylesheet" media="(max-width:800px)" href="css/index-mobile.css">
+    <link rel="stylesheet" media="(min-width:767px)" href="css/index-laptop.css">
+    <link rel="stylesheet" media="(max-width:767px)" href="css/index-mobile.css">
 </head>
-<body>
+<body onload="zeroNumber()">
     <header>
         <div class="head-icons">
-            <a class="bag" href="#"><img width="30" src="images/icons/lang.svg" alt="language"></a> 
-            <a class="bag" href="#"><img width="30" src="images/icons/account.svg" alt="account"> My Account</a>  
-            <a  href="shopping-cart.html"><img width="30" src="images/icons/bag.svg" alt="bag"></a> 
+            <a class="cart-white" href="#"><span class="glyphicon glyphicon-shopping-cart white"></span></a>
         </div>
         <div class="cheat"></div>
         <div class="search">
@@ -87,12 +85,15 @@
             </div>
             </div>
             
-            <div class="three-img" id="products">
-               
+            
+            
+            <div id="box"><p id="number">0</p></div>
+            
+            <div class="three-img" >
                 <figure>
                     <div  class="photo">
                         <div></div>
-                        <a href="#"><img src="images/icons/add.svg"></a>
+                        <a onclick="increaseNumber()"><img src="images/icons/add.svg"></a>
                         <img src="images/dresses/1.jpg" alt="wedding dress">
                     </div>
                     <figcaption>Flutter Dress</figcaption>
@@ -101,7 +102,7 @@
                 <figure>
                     <div  class="photo">
                         <div></div>
-                        <a href="#"><img src="images/icons/add.svg"></a>
+                        <a onclick="increaseNumber()"><img src="images/icons/add.svg"></a>
                         <img src="images/dresses/2.jpg" alt="wedding dress">
                     </div>    
                     <figcaption>Debutante Dress</figcaption>
@@ -110,7 +111,7 @@
                 <figure>
                     <div  class="photo">
                         <div></div>
-                        <a href="#"><img src="images/icons/add.svg"></a>
+                        <a onclick="increaseNumber()"><img src="images/icons/add.svg"></a>
                         <img src="images/dresses/3.jpg" alt="wedding dress">
                     </div>
                     <figcaption>Bandeau Dress</figcaption>
@@ -121,7 +122,7 @@
                 <figure>
                     <div  class="photo">
                         <div></div>
-                        <a href="#"><img src="images/icons/add.svg"></a>
+                        <a onclick="increaseNumber()"><img src="images/icons/add.svg"></a>
                         <img src="images/dresses/4.jpg" alt="wedding dress">
                     </div>
                     <figcaption>Princess Lace</figcaption>
@@ -130,7 +131,7 @@
                 <figure>
                     <div  class="photo">
                         <div></div>
-                        <a href="#"><img src="images/icons/add.svg"></a>
+                        <a onclick="increaseNumber()"><img src="images/icons/add.svg"></a>
                         <img src="images/dresses/5.jpg" alt="wedding dress">
                     </div>
                     <figcaption>Ruffle Dress</figcaption>
@@ -139,7 +140,7 @@
                 <figure>
                     <div  class="photo">
                         <div></div>
-                        <a href="#"><img src="images/icons/add.svg"></a>
+                        <a onclick="increaseNumber()"><img src="images/icons/add.svg"></a>
                         <img src="images/dresses/6.jpg" alt="wedding dress">
                     </div>
                     <figcaption>Lace Midi Dress</figcaption>
@@ -204,5 +205,6 @@
 
  <!--JS-->
 <script type="text/javascript" src="js/carousel.js"></script>
+<script type="text/javascript" src="js/shopping-cart.js"></script>
 </body>
 </html>

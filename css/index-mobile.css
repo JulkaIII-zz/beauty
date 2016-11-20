@@ -627,6 +627,17 @@ tr, td, th{
     opacity: 0.3;
     border-collapse: 2px;
 }*/
-.overlay a{
-   
+
+
+
+.white{
+    color: white;
+    font-size:30px;
+    top:10px;
+    right:20px;
+
 }
+.white:hover{
+   color: #DB7093;
+}
+
