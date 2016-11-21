@@ -629,15 +629,16 @@ tr, td, th{
 }
 
 .white{
-    color: pink;
+    color: white;
     font-size:28px;
 }
 
 .cart-white{
-    position: fixed;
+    position:absolute;
     top:5px;
     right:40px;
-    width:50px;
+    width:55px;
+    height:55px;
     z-index: 1;
 }
 .white:hover{
@@ -646,7 +647,7 @@ tr, td, th{
 
 /*Shopping-car Numbers*/
 #box{
-    position:fixed;
+    position:absolute;
     width: 20px;
     height: 20px;
     background-color: #DB7093;
