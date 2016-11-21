@@ -672,6 +672,7 @@ tr, td, th{
     font-size:30px;
     top:10px;
     right:10px;
+    z-index: 1;
 
 }
 .white:hover{
