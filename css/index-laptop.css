@@ -629,12 +629,12 @@ tr, td, th{
 }
 
 .white{
-    color: white;
+    color: pink;
     font-size:28px;
 }
 
 .cart-white{
-    position: absolute;
+    position: fixed;
     top:5px;
     right:40px;
     width:50px;
@@ -646,7 +646,7 @@ tr, td, th{
 
 /*Shopping-car Numbers*/
 #box{
-    position:absolute;
+    position:fixed;
     width: 20px;
     height: 20px;
     background-color: #DB7093;

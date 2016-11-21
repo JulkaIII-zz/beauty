@@ -640,4 +640,33 @@ tr, td, th{
 .white:hover{
    color: #DB7093;
 }
+/*Shopping-car Numbers*/
+#box{
+    position:absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #DB7093;
+    top:0;
+    right:10px;
+    z-index: 9999;
+    border-radius: 10px;
+    color:white;
+    text-align: center;
+    
+}
+#number{
+    font-family: arial;
+    font-size:15px;
+    font-weight: bold;
+    width:10px;
+}
+.photo>a{
+    cursor:pointer;
+}
+
+input:hover,input:focus{
+    border-color: #DB7093;
+    outline: none;
+    box-shadow:2px 2px 5px #DB7093;
+}
 
