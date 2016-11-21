@@ -390,6 +390,7 @@ li.dropdown {
     justify-content:center;
     flex-wrap:wrap;
     text-align: center;
+    z-index: 1;
 
 }
 .three-img img{
@@ -672,7 +673,7 @@ tr, td, th{
     font-size:30px;
     top:10px;
     right:10px;
-    z-index: 1;
+    z-index: 2;
 
 }
 .white:hover{
