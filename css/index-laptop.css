@@ -468,29 +468,64 @@ tr, td, th{
         text-align: center;
     background-color:#fcf4fa; 
 }
-
-
+#button-clear{
+    background-image:linear-gradient(to bottom,#DB7093 0,#db85a1 100%);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    margin-bottom: 5%;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+#button-clear:hover{
+ box-shadow: 0 0 5px black;
+}
 
 #submit{
     margin:0 auto;
-    background-color: #DB7093;
+    background-image:linear-gradient(to right,#DB7093 0,#f7b4ca 100%);
     border: none;
     color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
     margin-bottom: 5%;
     cursor: pointer;
     transition-duration: 0.4s;
-    
+    display: inline-block;
+    border-radius: 10px;
 
+}
+#submit:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 black;
+}
+#submit-checkout{
+    background-image:linear-gradient(to right,#DB7093 0,#f7b4ca 100%);
+    border: none;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    padding: 15px 15px 15px 15px;
+    border-radius: 10px;
+}
+.sub-checkout{
+    text-align: center;
+     margin-bottom: 5%;
 }
 .pay-now{
     text-align: center;
 }
-#submit:hover {
+#submit-checkout:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 black;
 }
 
@@ -645,35 +680,23 @@ tr, td, th{
    color: #DB7093;
 }
 
-/*Shopping-car Numbers*/
-#box{
-    position:absolute;
-    width: 20px;
-    height: 20px;
-    background-color: #DB7093;
-    top:0;
-    right:40px;
-    z-index: 9999;
-    border-radius: 10px;
-    color:white;
-    text-align: center;
-    
+
+#panel-head{
+    margin: 0;
+   background-image:linear-gradient(to right,#DB7093 0,#f7b4ca 100%); 
 }
-#number{
-    font-family: arial;
-    font-size:15px;
+#panel-head{
+    font-size: 18px;
     font-weight: bold;
-    width:10px;
+    text-transform: uppercase;
 }
-.photo>a{
-    cursor:pointer;
+#panel-2{
+
+    height:250px;
 }
 
-input:hover,input:focus{
-    border-color: #DB7093;
-    outline: none;
-    box-shadow:2px 2px 5px #DB7093;
-}
+
+
 
 
 

@@ -1,6 +1,7 @@
 $(function() {
     $('#submit').click(function(e) {
         e.preventDefault();
+
         $.ajax({
                 url: "https://formspree.io/julia.ilkiv@gmail.com",
                 method: "POST",
@@ -23,9 +24,11 @@ $(function() {
             })
             .fail(function() {
                 $('form').html('<h1>Error</h1>')
-            });
+
     });
+   
 });
+
 
 
 

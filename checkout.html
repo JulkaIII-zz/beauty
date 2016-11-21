@@ -33,10 +33,11 @@
 </header>
    <div class="logo2"><a id="title" class="logo" href="index.html">BeautyWithJulia</a></div>
     <main>
-        <form  method="post" action="https://formspree.io/julia.ilkiv@gmail.com">
+        <form id="myForm" method="post" action="https://formspree.io/julia.ilkiv@gmail.com">
             <div class="checkout">
-                <div>
-                    <h4>1 Personal information</h4>
+                <div class="panel panel-default">
+                    <h4 class="panel-heading"  id="panel-head">1. Personal information</h4>
+                    <div class="panel-body">
                     <label for="firstname">First Name *</label><br>
                     <input type="text" id="firstname" name="first-name" required><br>
                     <label for="lastname">Last Name *</label><br>
@@ -45,9 +46,11 @@
                     <input type="email" id="email" name="email"><br>
                     <label for="tel">Telephone *</label><br>
                     <input type="tel" id="tel" name="telephone" required><br>
+                    </div>
                 </div>
-                <div> 
-                    <h4>2 BILLING ADDRESS</h4>
+                <div  class="panel panel-default" id="panel-2"> 
+                    <h4 class="panel-heading"  id="panel-head">2. BILLING ADDRESS</h4>
+                    <div class="panel-body">
                     <label for="city">City:</label><br>
     		        <select id="city">
         			    <option>--Select City--</option>
@@ -58,9 +61,11 @@
     		        </select><br>
                     <label for="newpost">New Post Address</label><br>
                     <input type="text" id="newpost" name="newpost"><br>
+                    </div>
                 </div>
-                <div>
-                    <h4>3. PAYMENT METHOD</h4>
+                <div class="panel panel-default">
+                    <h4 class="panel-heading" id="panel-head">3. PAYMENT METHOD</h4>
+                    <div class="panel-body">
                     <label for="radio"></label>
                     <input type="radio" id="radio" name="payment-method" >MasterCard
                     <img width="20" src="images/icons/mastercard.svg"><br>
@@ -74,7 +79,7 @@
                     <input type="text" id="expiry" name="year" size="3" pattern="{2}" placeholder="17"><br>
                     <label for="code">Security Code *</label><br>
                     <input type="text" id="code" name="security-code" pattern="[0-9]{3}" size="3" required placeholder="123"><br>
-                    
+                    </div>
                 </div>
                 
             </div>
