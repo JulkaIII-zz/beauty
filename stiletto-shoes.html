@@ -18,12 +18,11 @@
     <link rel="stylesheet" media="(min-width:767px)" href="css/index-laptop.css">
     <link rel="stylesheet" media="(max-width:767px)" href="css/index-mobile.css">
 </head>
-<body>
+<body onload="zeroNumber()">
+    <div id="box"><p id="number">0</p></div>
     <header>
         <div class="head-icons">
-            <a class="bag" href="#"><img width="30" src="images/icons/lang.svg" alt="language"></a> 
-            <a class="bag" href="#"><img width="30" src="images/icons/account.svg" alt="account"> My Account</a>  
-            <a  href="shopping-cart.html"><img width="30" src="images/icons/bag.svg" alt="bag"></a> 
+            <a class="cart-white" href="shopping-cart.html"><span class="glyphicon glyphicon-shopping-cart white"></span></a>
         </div>
         <div class="cheat"></div>
         <div class="search">
@@ -89,7 +88,7 @@
                 <figure>
                     <div class="photo">
                         <div></div>
-                        <a href="#"><img src="images/icons/add.svg"></a>
+                        <a onclick="increaseNumber()" id="product-31" data-name="Women's Patent Leather Stiletto Heel Pumps" data-price="193.48" class="add-to-cart"><img src="images/icons/add.svg"></a>
                         <img src="images/shoes/26.jpg" alt="stiletto">
                     </div>
                     <figcaption>Women's Patent Leather Stiletto Heel Pumps</figcaption>
@@ -98,7 +97,7 @@
                 <figure>
                     <div class="photo">
                         <div></div>
-                        <a href="#"><img src="images/icons/add.svg"></a>
+                        <a onclick="increaseNumber()" id="product-32" data-name="Women's Sparkling Glitter Stiletto Heel Pumps" data-price="67.72" class="add-to-cart"><img src="images/icons/add.svg"></a>
                         <img src="images/shoes/27.jpg" alt="stiletto">
                     </div>
                     <figcaption>Women's Sparkling Glitter Stiletto Heel Pumps</figcaption>
@@ -107,7 +106,7 @@
                 <figure>
                     <div class="photo">
                         <div></div>
-                        <a href="#"><img src="images/icons/add.svg"></a>
+                        <a onclick="increaseNumber()" id="product-33" data-name="Women's Sparkling Glitter Stiletto Heel Pumps" data-price="274.09" class="add-to-cart"><img src="images/icons/add.svg"></a>
                         <img src="images/shoes/28.jpg" alt="stiletto">
                     </div>
                     <figcaption>Women's Sparkling Glitter Stiletto Heel Pumps</figcaption>
@@ -118,25 +117,25 @@
                 <figure>
                     <div class="photo">
                         <div></div>
-                        <a href="#"><img src="images/icons/add.svg"></a>
+                        <a onclick="increaseNumber()" id="product-34" data-name="Leatherette Heel Pumps" data-price="403.08" class="add-to-cart"><img src="images/icons/add.svg"></a>
                         <img src="images/shoes/28+1.jpg" alt="stiletto">
                     </div>
-                    <figcaption>Women's Sparkling Glitter Stiletto Heel Pumps</figcaption>
+                    <figcaption>Leatherette Heel Pumps</figcaption>
                     <figcaption>$403.08</figcaption>
                 </figure>
                 <figure>
                     <div class="photo">
                         <div></div>
-                        <a href="#"><img src="images/icons/add.svg"></a>
+                        <a onclick="increaseNumber()" id="product-35" data-name="Women's Sparkling Stiletto" data-price="255.92" class="add-to-cart"><img src="images/icons/add.svg"></a>
                         <img src="images/shoes/29.jpg" alt="stiletto">
                     </div>
-                    <figcaption>Women's Sparkling Glitter Stiletto Heel Pumps</figcaption>
+                    <figcaption>Women's Sparkling Stiletto</figcaption>
                     <figcaption>$255.92</figcaption>
                 </figure>
                 <figure>
                     <div class="photo">
                         <div></div>
-                        <a href="#"><img src="images/icons/add.svg"></a>
+                        <a onclick="increaseNumber()" id="product-36" data-name="Women's Sparkling Glitter Stiletto Heel Pumps" data-price="153.17" class="add-to-cart"><img src="images/icons/add.svg"></a>
                         <img src="images/shoes/30.jpg" alt="stiletto">
                     </div>
                     <figcaption>Women's Sparkling Glitter Stiletto Heel Pumps</figcaption>
@@ -200,5 +199,7 @@
 <script src="textillate/text.js"></script>
  <!--JS-->
 <script type="text/javascript" src="js/carousel.js"></script>
+<script type="text/javascript" src="js/add-shopping-cart.js"></script>
+<script type="text/javascript" src="js/shopping-cart-table.js"></script>
 </body>
 </html>

@@ -644,6 +644,7 @@ tr, td, th{
    color: #DB7093;
 }
 
+/*Shopping-car Numbers*/
 #box{
     position:absolute;
     width: 20px;
@@ -662,10 +663,16 @@ tr, td, th{
     font-size:15px;
     font-weight: bold;
     width:10px;
-    
 }
 .photo>a{
     cursor:pointer;
 }
+
+input:hover,input:focus{
+    border-color: #DB7093;
+    outline: none;
+    box-shadow:2px 2px 5px #DB7093;
+}
+
 
 

@@ -18,12 +18,11 @@
     <link rel="stylesheet" media="(min-width:767px)" href="css/index-laptop.css">
     <link rel="stylesheet" media="(max-width:767px)" href="css/index-mobile.css">
 </head>
-<body>
+<body onload="zeroNumber()">
+    <div id="box"><p id="number">0</p></div>
     <header>
         <div class="head-icons">
-            <a class="bag" href="#"><img width="30" src="images/icons/lang.svg" alt="language"></a> 
-            <a class="bag" href="#"><img width="30" src="images/icons/account.svg" alt="account"> My Account</a>  
-            <a  href="shopping-cart.html"><img width="30" src="images/icons/bag.svg" alt="bag"></a> 
+            <a class="cart-white" href="shopping-cart.html"><span class="glyphicon glyphicon-shopping-cart white"></span></a>
         </div>
         <div class="cheat"></div>
         <div class="search">
@@ -88,7 +87,7 @@
                 <figure>
                     <div class="photo">
                         <div></div>
-                        <a href="#"><img src="images/icons/add.svg"></a>
+                        <a onclick="increaseNumber()" id="product-13" data-name="Trim Midi Dress" data-price="93.51" class="add-to-cart"><img src="images/icons/add.svg"></a>
                         <img src="images/dresses/13.jpg" alt="bridesmaid dress">
                     </div>
                     <figcaption>Trim Midi Dress</figcaption>
@@ -97,7 +96,7 @@
                 <figure>
                     <div class="photo">
                         <div></div>
-                        <a href="#"><img src="images/icons/add.svg"></a>
+                        <a onclick="increaseNumber()" id="product-14" data-name="Wiggle Dress" data-price="67.72" class="add-to-cart"><img src="images/icons/add.svg"></a>
                         <img src="images/dresses/14.jpg" alt="bridesmaid dress">
                     </div>
                     <figcaption>Wiggle Dress</figcaption>
@@ -106,7 +105,7 @@
                 <figure>
                     <div class="photo">
                         <div></div>
-                        <a href="#"><img src="images/icons/add.svg"></a>
+                        <a onclick="increaseNumber()" id="product-15" data-name="Whistles Arabella" data-price="274.09" class="add-to-cart"><img src="images/icons/add.svg"></a>
                         <img src="images/dresses/15.jpg" alt="bridesmaid dress">
                     </div>
                     <figcaption>Whistles Arabella</figcaption>
@@ -117,7 +116,7 @@
                 <figure>
                     <div class="photo">
                         <div></div>
-                        <a href="#"><img src="images/icons/add.svg"></a>
+                        <a onclick="increaseNumber()" id="product-16" data-name="Floral Gown" data-price="362.77" class="add-to-cart"><img src="images/icons/add.svg"></a>
                         <img src="images/dresses/16.jpg" alt="bridesmaid dress">
                     </div>
                     <figcaption>Floral Gown</figcaption>
@@ -126,7 +125,7 @@
                 <figure>
                     <div class="photo">
                         <div></div>
-                        <a href="#"><img src="images/icons/add.svg"></a>
+                        <a onclick="increaseNumber()" id="product-17" data-name="Lace Crop Dress" data-price="120.92" class="add-to-cart"><img src="images/icons/add.svg"></a>
                         <img src="images/dresses/17.jpg" alt="bridesmaid dress">
                     </div>
                     <figcaption>Lace Crop Dress</figcaption>
@@ -135,7 +134,7 @@
                 <figure>
                     <div class="photo">
                         <div></div>
-                        <a href="#"><img src="images/icons/add.svg"></a>
+                        <a onclick="increaseNumber()" id="product-18" data-name="Prom Dress" data-price="88.68" class="add-to-cart"><img src="images/icons/add.svg"></a>
                         <img src="images/dresses/18.jpg" alt="bridesmaid dress">
                     </div>
                     <figcaption>Prom Dress</figcaption>
@@ -199,5 +198,7 @@
 <script src="textillate/text.js"></script>
  <!--JS-->
 <script type="text/javascript" src="js/carousel.js"></script>
+<script type="text/javascript" src="js/add-shopping-cart.js"></script>
+<script type="text/javascript" src="js/shopping-cart-table.js"></script>
 </body>
 </html>
