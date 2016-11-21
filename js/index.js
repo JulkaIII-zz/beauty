@@ -1,7 +1,7 @@
 $(function() {
     $('#submit').click(function(e) {
         e.preventDefault();
-
+$('#myForm')[0].checkValidity() // returns true/false
         $.ajax({
                 url: "https://formspree.io/julia.ilkiv@gmail.com",
                 method: "POST",

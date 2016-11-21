@@ -12,7 +12,7 @@ $(".add-to-cart").click(function() {
     var id = button.attr("id");
     var name = button.attr("data-name");
     var price = button.attr("data-price");
-    var quantity = 1; // Số lượng
+    var quantity = 1; 
     var item = {
         id: id,
         name: name,
@@ -27,8 +27,8 @@ $(".add-to-cart").click(function() {
                 exists = true;
                 return false;
             }
-        });
-    }
+        }); 
+    }  
 
     if (!exists) {
         shoppingCartItems.push(item);
@@ -45,22 +45,44 @@ $("#button-clear").click(function() {
     $("#table-products > tbody").html("");
 });
 
+
+var array= [];
+
+
 function displayShoppingCartItems() {
     if (sessionStorage["shopping-cart-items"] != null) {
         shoppingCartItems = JSON.parse(sessionStorage["shopping-cart-items"].toString());
 
         $("#table-products > tbody").html("");
         $.each(shoppingCartItems, function(index, item) {
+            
+            var total = Math.round(item.price * item.quantity);
+           /* array.push(total);*/
             var htmlString = "";
             htmlString += "<tr>";
             htmlString += "<td>" + item.id + "</td>";
             htmlString += "<td>" + item.name + "</td>";
             htmlString += "<td style='text-align: right'>" + item.price + "</td>";
             htmlString += "<td style='text-align: right'>" + item.quantity + "</td>";
-            htmlString += "<td style='text-align: right'>" + item.price * item.quantity + "</td>";
+            htmlString += "<td style='text-align: right'>" + total + "</td>";
             htmlString += "</tr>";
+            
             $("#table-products > tbody:last").append(htmlString);
+           
         });
-    }
-}
         
+         
+    }  
+    // document.getElementById('number').innerHTML=shoppingCartItems.length; 
+}
+/*
+function subt(){ 
+    var subtotal=0;
+            for(var i=0;i<array.length;i++){
+               
+                subtotal+=array[i];
+               
+            } return subtotal;
+}
+ document.getElementById('sum').innerHTML=subt();
+*/
