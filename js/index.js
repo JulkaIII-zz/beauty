@@ -1,7 +1,7 @@
 $(function() {
     $('#submit').click(function(e) {
         e.preventDefault();
-$('#myForm')[0].checkValidity() // returns true/false
+//$('#myForm')[0].checkValidity() ; returns true/false
         $.ajax({
                 url: "https://formspree.io/julia.ilkiv@gmail.com",
                 method: "POST",
@@ -20,10 +20,10 @@ $('#myForm')[0].checkValidity() // returns true/false
                 dataType: "json"
             })
             .done(function() {
-               alert('Thank you');/*html('<h1>Thank you!</h1>')*/
+               $('#myForm').html('<h1>Thank you!</h1>');
             })
             .fail(function() {
-                $('form').html('<h1>Error</h1>')
+                $('#myForm').html('<h1>Error</h1>')
 
     });
    
