@@ -113,6 +113,13 @@
     </nav>
     
     <main>
+        <h1>LIKE</h1>
+        <div
+          class="fb-like"
+          data-share="true"
+          data-width="450"
+          data-show-faces="true">
+        </div>
         <div class="product-types-text home-page">
             <img width="50" src="images/icons/main-icon.svg" alt="bag">
             <h2>WOMEN'S</h2>
@@ -399,5 +406,24 @@
  <script src="js/nav-mob.js"></script>
 <script type="text/javascript" src="js/carousel.js"></script>
 <search src="js/search.js"></search>
+
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '143351389676167',
+      xfbml      : true,
+      version    : 'v2.12'
+    });
+    FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
 </body>
 </html>
